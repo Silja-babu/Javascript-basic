@@ -1,0 +1,13 @@
+body{
+    text-align: center;
+}
+#container{
+    margin-top: 20px;
+}
+#container button{
+    background: lightcoral;
+    border: none;
+    color: white;
+    padding:10px 30px;
+    font-weight: bold;
+}

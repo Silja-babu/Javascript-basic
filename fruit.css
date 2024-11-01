@@ -1,0 +1,18 @@
+body{
+    background-color: white;
+}
+div{
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 20px;
+    width: 200px;
+    margin: 20px;
+    
+      
+}
+#apple-shelf{
+    background-color: lightcoral;
+}
+#orange-shelf{
+    background-color: lightsalmon;
+}
