@@ -121,3 +121,67 @@ function showAlert(){
   let width=null;
   
   alert(area)
+
+
+
+  function showAlert(){
+    let sum=0;
+  while(true){
+    let value=+prompt("enter a number, ");
+    if(!value) break;
+    sum+=value;
+
+  }
+  alert('Sum: '+sum);
+  }
+
+
+  var objs=[
+    {
+      name:'one',
+      msg:'Hello i am one'
+    },
+    {
+      name:'two',
+      msg:'hello i am two'
+    },
+    {
+      name:'three',
+      msg:'helo iam three'
+    }
+  
+  ];
+  function main(){
+    objs.forEach((item)=>{
+      const bt =document.createElement('button');
+      bt.innerHTML=item.name;
+      bt.onclick=getCallback;
+      document.body.appendChild(bt);
+  
+    })
+  }
+  function getCallback(arg){
+    return function(){
+      alert(arg)
+    }
+  }
+  main();
+
+
+  function showAlert(){
+    function ask(question,yes,no){
+      if(confirm(question)) yes()
+      else no();  
+    }
+    function showOk(){
+      alert('you agreed..')
+
+    }
+    function showCancel(){
+      alert('you canceled the execution.')
+    }
+    ask('do you agree?',showOk,showCancel)
+  }
+
+
+                                 
