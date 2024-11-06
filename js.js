@@ -325,3 +325,30 @@ function mains(){
 }
 mains();
 
+
+let myage=1
+let Welcome;
+if(myage<18){
+  Welcome=function(){
+    console.log('I am sorry you are too small')
+  }
+}else{
+  Welcome=function(){
+    console.log('greeting welcome to the page')
+  }
+}
+Welcome();
+
+let sum =(a,b) =>a+b;
+console.log(sum(1,2));
+
+
+function nijafunction(elem){
+  elem=clone(elem);
+}
+
+
+function sums(a,b){
+  return a+b
+}
+
